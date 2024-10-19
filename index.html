@@ -9,6 +9,7 @@
      <h3 id="result"></h3>
     <button onclick="add()">Addition</button>
     <button onclick="sub()">Subtraction</button>
+    <button onclick="multi(10,29)">Multiplication</button>
     <script>
         function add(){
             var a=5;
@@ -21,6 +22,10 @@
             var b=2;
             var c= a-b;
             document.getElementById("result").innerHTML="subtraction is "+ c ;   
+        }
+        function multi(a,b){
+            var c= a*b;
+            document.getElementById("result").innerHTML="Multiplication is "+ c ;   
         }
     </script>
 </body>
