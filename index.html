@@ -6,10 +6,14 @@
 </head>
 <body>
     <h1>Js function</h1>
+    <div style="background-color:red; padding: 10px; text-align: center;">
      <h3 id="result"></h3>
     <button onclick="add()">Addition</button>
     <button onclick="sub()">Subtraction</button>
+    <br>
     <button onclick="multi(10,29)">Multiplication</button>
+    <button onclick="div(100,5)">division</button>
+    </div>
     <script>
         function add(){
             var a=5;
@@ -25,6 +29,10 @@
         }
         function multi(a,b){
             var c= a*b;
+            document.getElementById("result").innerHTML="Multiplication is "+ c ;   
+        }
+        function div(a,b){
+            var c= a/b;
             document.getElementById("result").innerHTML="Multiplication is "+ c ;   
         }
         var div=function(a,b){return a/b}
